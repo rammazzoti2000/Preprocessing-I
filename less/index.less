@@ -57,3 +57,77 @@ html, body {
     height: 100%;
 }
 
+@backgroundLightGray: #e9ecef;
+.section-set {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.font-set {
+	font-size: 1.3rem;
+}
+
+.line-set {
+	line-height: 3;
+}
+
+header {
+	.section-set();
+	nav{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		a {
+			margin-right: -30px;
+			padding: 30px 30px;
+			text-decoration: none;
+			color: black;
+		}
+	}
+}
+
+.top {
+	background-color: @backgroundLightGray;
+	.section-set();
+	border-radius: 5px;
+	padding: 0 30px;
+	
+	img {
+		display: block;
+		width: 35%;
+		padding: 60px 0 20px 0;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+
+	h3{
+		.line-set();
+		.font-set();
+	}
+	
+	hr {
+		border: 0;
+		border-top: 1px solid lightgrey;
+		height: 20px;
+	}
+	
+	p{
+		line-height: 1.5;
+	}
+
+	button {
+		height: 50px;
+		font-size: 1.2rem;
+		font-weight: bold;
+		background-color: #808080;
+		color: #e9ecef;
+		border-radius: 5px;
+		margin: 20px auto 8% auto;
+
+	}
+}
+
+
